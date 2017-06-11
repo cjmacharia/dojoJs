@@ -2,13 +2,16 @@ function addActivity() {
 
     var li = document.createElement("li");
     var add = document.getElementById("activity").value;
-
+    var option = document.createElement("option")
+     option.append(add);
     li.append(add);
     if (add == "") {
         alert("the activity can not be blank");
     }
     else {
         document.getElementById("lists").append(li);
+        document.getElementById("categories").append(option);
+
     }
 }
 
