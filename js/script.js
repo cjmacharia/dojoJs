@@ -4,17 +4,23 @@ function addActivity() {
     var add = document.getElementById("activity").value;
 
     li.append(add);
-    // var input = document.createElement("input");
-    //
-    // input.type = "checkbox";
-    // p2.append("done?");
-
     if (add == "") {
         alert("the activity can not be blank");
     }
     else {
         document.getElementById("lists").append(li);
-        document.getElementById("check").append(p2);
     }
 }
 
+function addFriend() {
+    var li = document.createElement("li");
+    var add = document.getElementById("friends").value;
+    li.append(add);
+
+    if (add == "") {
+        alert("please add a friend ");
+    }
+    else {
+        document.getElementById("myFriends").append(li);
+    }
+}
