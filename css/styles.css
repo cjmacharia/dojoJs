@@ -5,7 +5,9 @@
 #lists li {
     margin: 10px 0;
 }
-
+#check li{
+	margin: 10px 0;
+}
 #friendsAdded {
     min-height: 200px;
 }

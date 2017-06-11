@@ -2,19 +2,24 @@ function addActivity() {
 
     var li = document.createElement("li");
     var add = document.getElementById("activity").value;
-    var option = document.createElement("option")
-     option.append(add);
-    li.append(add);
-    if (add == "") {
-        alert("the activity can not be blank");
-    }
-    else {
-        document.getElementById("lists").append(li);
-        document.getElementById("categories").append(option);
+    var lists = document.createElement("li");
+    var input = document.createElement("input");
 
-    }
+    input.type = "checkbox";
+     li.append(add);
+
+     lists.append(input);
+     lists.append("done?");
+     
+
+ if (add =="") {
+    alert("the activity can not be blank");
+     }
+else{
+    document.getElementById("lists").append(li);
+    document.getElementById("check").append(lists);
 }
-
+}
 function addFriend() {
     var li = document.createElement("li");
     var add = document.getElementById("friends").value;
