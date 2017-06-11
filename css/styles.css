@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+#lists li {
+    margin: 10px 0;
+}
+
+#friendsAdded {
+    min-height: 200px;
+}
